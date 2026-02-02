@@ -1,0 +1,4 @@
+hola mundo desde write en el with
+hola mundo desde append en el with
+
+hola mundo desde append en el with con salto de línea
