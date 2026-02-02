@@ -1,3 +1,5 @@
+# None en Python
+
 x = None # None es la ausencia de valor
 print(x) # None
 print(type(x)) # <class 'NoneType'>

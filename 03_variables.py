@@ -1,8 +1,10 @@
+# Variables en Python
+
 X = "Esta es una variable"
 print(X) # Imprime el valor de la variable X
 print("Hola, mundo!")  # Imprime un saludo en la consola
 
-X = "Acá estoy escrubiendo otra cosa"
+X = "Acá estoy escribiendo otra cosa"
 print(X) # Imprime el nuevo valor de la variable X
 
 x = "Esta es otra variable con minúscula"

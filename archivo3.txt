@@ -1,0 +1,2 @@
+Archivo externo con otra ruta.
+Se debe agregar toda la ruta del archivo.
