@@ -10,6 +10,7 @@ Puntos clave:
 - **Entrada del usuario** con *input* y texto claro.
 """
 
+ARCHIVO_PEDIDOS = "pedidos.txt" # Las constantes van en mayúsculas por convención.
 
 def pedir_cafe():
     print("\nElige el café que prefieras:")
@@ -27,3 +28,12 @@ def pedir_cafe():
         "4": "Americano"
     }
     # la elección y el guardado en archivo se implementarán más adelante
+
+    if opcion in cafes: # Verificar si la opción es válida
+        cafe_elegido = cafes[opcion] # Obtener el nombre del café elegido
+        print("Has pedido un " + cafe_elegido + ". ¡Preparando tu café!") # Confirmación del pedido
+
+        with open(ARCHIVO_PEDIDOS, "a", encoding="utf-8") as archivo: # Abrir el archivo en modo añadir
+            archivo.write(cafe_elegido + "\n") # Guardar el pedido en el archivo. Write añade una línea nueva.
+    else:
+        print("Opción inválida. Por favor, elige un café de la lista.")
